@@ -73,7 +73,7 @@ public class QueryTestCase {
 			String catName = "Food";
 			List<Object[]> getProduct = productRepository.productWithCategory(catName);
 			System.out.println(getProduct.toString());
-			
+			System.out.println("Hello");
 		}catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
