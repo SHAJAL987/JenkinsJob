@@ -20,7 +20,7 @@ public interface ProductRepository extends JpaRepository<Product, Long>{
 	@Query("select u from Product u where u.categoryId = :categoryId and u.active = true")
 	List<Product> getAllProductByCategory(@Param("categoryId") Long categoryId);
 	
-	/*@Query("select a.id,"
+	@Query("select a.id,"
 			+ "a.productCategoryNaame,"
 			+ "b.id,"
 			+ "b.sku,"
@@ -31,5 +31,5 @@ public interface ProductRepository extends JpaRepository<Product, Long>{
 			+ "b.imageUrl,"
 			+ "b.categoryId "
 			+ "from ProductCategory b JOIN b.categoryId a where a.productCategoryNaame = :productCategoryNaame")
-	List<Object[]> productWithCategory(@Param("productCategoryNaame") String productCategoryNaame);*/
+	List<Object[]> productWithCategory(@Param("productCategoryNaame") String productCategoryNaame);
 }
