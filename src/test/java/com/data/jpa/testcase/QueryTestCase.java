@@ -52,7 +52,7 @@ public class QueryTestCase {
 		}catch (Exception e) {
 			System.out.print(e.getMessage());
 		}
-	}
+	}*/
 	
 	@Test
 	void productByCat() {
@@ -65,9 +65,9 @@ public class QueryTestCase {
 		}catch (Exception e) {
 			System.out.print(e.getMessage());
 		}
-	}*/
+	}
 	
-	@Test
+	/*@Test
 	void productWithCategory() {
 		try {
 			String catName = "Food";
@@ -77,6 +77,6 @@ public class QueryTestCase {
 		}catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-	}
+	}*/
 	
 }
